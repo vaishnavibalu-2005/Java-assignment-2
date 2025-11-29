@@ -1,0 +1,15 @@
+public class PrintArray {
+    public static <T> void printArray(T[] arr) {
+        for (T item : arr)
+            System.out.print(item + " ");
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        String[] langs = {"Java", "Python", "C++"};
+        Integer[] nums = {1, 2, 3, 4};
+
+        printArray(langs);
+        printArray(nums);
+    }
+}
